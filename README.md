@@ -3,6 +3,8 @@
 This application allows users to generate movie release charts, load data from a CSV file into a SQLite database, 
 and export movie data from the database.
 
+![movies-chart](Sélection_027.png)
+
 
 ## Running the Flask Application
 To run the Flask application, follow these steps:
