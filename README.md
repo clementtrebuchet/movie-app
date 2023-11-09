@@ -1,17 +1,21 @@
-# Running the Flask Application
+# Movie-App
+
+This application allows users to generate movie release charts, load data from a CSV file into a SQLite database, 
+and export movie data from the database.
+
+
+## Running the Flask Application
 To run the Flask application, follow these steps:
-
-Set the Flask app environment variable:
-
-`export FLASK_APP=app.py`
 
 Start the Flask development server:
 
-`flask run`
+```bash
+python app.py
+```
 
-Open a web browser and navigate to http://localhost:5000 to access the application.
+Open a web browser and navigate to http://localhost:8080 to access the application.
 
-# Running Pytest
+## Running Pytest
 To run Pytest and execute the tests for the Flask application, follow these steps:
 
 Ensure you have installed the project dependencies as mentioned in the setup section.
@@ -19,22 +23,18 @@ Ensure you have installed the project dependencies as mentioned in the setup sec
 Make sure you are in the project directory.
 
 Run the Pytest command:
-`pytest`
+
+```bash
+pytest
+```
 Pytest will automatically discover the tests located in the project directory and its subdirectories and execute them.
 
 # To create a SQLite database, you can follow these steps:
 
-Open a terminal window. You can find the Terminal application in the Utilities folder within the Applications folder.
-Navigate to the directory where you want to create the SQLite database file. For example, if you want to create the database 
-file in your home directory, use the following command:
+The SQLite database is automatically created by the application.
 
-`cd ~`
+# CSV Data File
 
-Launch the SQLite shell by running the following command:
+Place the `movies_metadata.csv` file in the root of the `movie-app` folder before starting the application or loading data. 
 
-`sqlite3 database.db`
-
-Replace database.db with the name you want to give to your SQLite database file. This command will create a new SQLite database file with the specified name in the current directory.
-
-Once you run the command, you will enter the SQLite shell prompt, indicated by 
-`sqlite>`. 
+This CSV file is used to populate the SQLite database with movie data.
