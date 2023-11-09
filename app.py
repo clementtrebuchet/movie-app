@@ -167,4 +167,5 @@ def export_data():
 
 
 if __name__ == "__main__":
+    # remove the debug parameter if running in production
     app.run(debug=True, port=8080, host="localhost")
